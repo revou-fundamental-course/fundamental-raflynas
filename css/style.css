@@ -8,6 +8,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* padding: 32px; */
 }
 
 .logo-icon {
@@ -66,4 +67,10 @@ nav>a {
 
 .divider {
     flex: 2;
+}
+
+.form-awal {
+    display: flex;
+    justify-content: space-evenly;
+
 }
