@@ -36,7 +36,6 @@
                 <div class="banner-container"></div>
             </article>
          </section>
-
          <hr>
 
         <!-- ini Our Profile content -->
@@ -77,33 +76,50 @@
 
             <article class="form-awal">
                 <form name="message-form" onsubmit="return validateForm()">
-                 Nama: <input placeholder="Nama" type="text" name="full-name" />
-                 <br />
+                    <table>
 
-                 Tanggal Lahir:
-                 <input type="date" name="birth-date" />
-                 <br />
+                        <tr>
+                            <td>Nama</td>
+                            <td>: </td>
+                            <td><input placeholder="Nama" type="text" name="full-name" size="48"/></td>
+                        </tr>
 
-                 Jenis Kelamin:
-                 <input type="radio" id="male" name="gender" value="male" />
-                 <label for="male">Laki-laki</label>
-                 <input type="radio" id="female" name="gender" value="male" />
-                 <label type="female">Perempuan</label>
-                 <br />
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td>:</td>
+                            <td><input type="date" name="birth-date" /></td>
+                        </tr>
 
-                 Pesan:
-                 <textarea placeholder="Pesan" name="messages"></textarea>
-                 <br />
+                        <tr>   
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="male" />
+                                <label for="male">Laki-laki</label>
+                                <input type="radio" id="female" name="gender" value="male" />
+                                <label type="female">Perempuan</label>
+                            </td>
+                        </tr> 
 
-                 <input type="submit" value="Submit" />
+                        <tr>
+                            <td class="ab">Pesan</td>
+                            <td class="ab">:</td>
+                            <td><textarea placeholder="Pesan" name="messages" cols="45" rows="10"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3"><input type="submit" value="Submit" /></td>
+                        </tr>
+                    </table>
                 </form>
 
-                <div>
-                 <p>Nama: <span id="sender-full-name"></span></p>
-                 <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
-                 <p>Jenis Kelamin: <span id="sender-gender"></span></p>
-                 <p>Pesan: <span id="sender-messages"></span></p>
+                <div class="hasil-form">
+                    <p><b>Nama: </b><span id="sender-full-name"></span></p>
+                    <p><b>Tanggal Lahir: </b><span id="sender-birth-date"></span></p>
+                    <p><b>Jenis Kelamin: </b><span id="sender-gender"></span></p>
+                    <p><b>Pesan: </b><span id="sender-messages"></span></p>
                 </div>
+                
             </article>
          </section>
 
