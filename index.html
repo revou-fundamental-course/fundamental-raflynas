@@ -1,130 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Rafly</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofolio Rafly</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    </head>
 
-<body>
-    <!-- <ini Header Nav> -->
+    <body>
+        <!-- <ini Header Nav> -->
+        <header>
+            <nav class="nav-container">
+                <div class="logo-icon"></div>
+                <div class="menu-icon" id="menu-icon"><i class="ph ph-list" style="color: white;"></i></div>
+                <ul id="menu-list" class="hidden">
+                    <li>
+                        <a href="#home-content">Home</a>
+                    </li>
+                    <li>
+                        <a href="#my-contact">My Contact</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#portofolio">Portofolio</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#message-us">Message Me</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><button id="changeName">Change Name</button></a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
     
-    <header class="nav-container"  >
-        <div class="logo-icon"></div>
+        <hr>
+        <!-- End of Header Nav -->
 
-        <nav>
-            <a>Home</a>
-            <a href="#our-profile">Our Profile</a>
-            <a>Portofolio</a>
-            <a>Message Us</a>
-        </nav>
-    </header>
-
-    <hr>
-
-    <main>
-        <!-- ini Home content -->
-         <section>
-            <header>
-                <h1>Hi <span id="namauser">Orang</span>, Welcome to website!</h1>
-            </header>
-
-            <article>
-                <p>Ini adalah website portofolio saya</p>
-
-                <div class="banner-container"></div>
-            </article>
-         </section>
-         <hr>
-
-        <!-- ini Our Profile content -->
-         <section id="our-profile">
-            <header>
-                <h1>Our Profile</h1>
-            </header>
-
-            <article class="profile-content">
-               <div class="profile-item">
-                    <div class="profile-icon profile-1"></div>
-                    <p>Profile 1</p>
-               </div>
-
-               <div class="profile-item">
-                    <div class="profile-icon profile-2"></div>
-                    <p>Profile 2</p>
-               </div>
-
-               <div class="profile-item">
-                    <div class="profile-icon profile-3"></div>
-                    <p>Profile 3</p>
-               </div>
-
-               <div class="divider"></div>
-            </article>
-         </section>
-
-         <hr>
-
-        <!-- ini Portofolio content -->
-        
-        <!-- ini Message Us content -->
-         <section>
-            <header>
-                <h1>Message Us</h1>
-            </header>
-
-            <article class="form-awal">
-                <form name="message-form" onsubmit="return validateForm()">
-                    <table>
-
-                        <tr>
-                            <td>Nama</td>
-                            <td>: </td>
-                            <td><input placeholder="Nama" type="text" name="full-name" size="48"/></td>
-                        </tr>
-
-                        <tr>
-                            <td>Tanggal Lahir</td>
-                            <td>:</td>
-                            <td><input type="date" name="birth-date" /></td>
-                        </tr>
-
-                        <tr>   
-                            <td>Jenis Kelamin</td>
-                            <td>:</td>
-                            <td>
-                                <input type="radio" id="male" name="gender" value="male" />
-                                <label for="male">Laki-laki</label>
-                                <input type="radio" id="female" name="gender" value="male" />
-                                <label type="female">Perempuan</label>
-                            </td>
-                        </tr> 
-
-                        <tr>
-                            <td class="ab">Pesan</td>
-                            <td class="ab">:</td>
-                            <td><textarea placeholder="Pesan" name="messages" cols="45" rows="10"></textarea></td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="3"><input type="submit" value="Submit" /></td>
-                        </tr>
-                    </table>
-                </form>
-
-                <div class="hasil-form">
-                    <p><b>Nama: </b><span id="sender-full-name"></span></p>
-                    <p><b>Tanggal Lahir: </b><span id="sender-birth-date"></span></p>
-                    <p><b>Jenis Kelamin: </b><span id="sender-gender"></span></p>
-                    <p><b>Pesan: </b><span id="sender-messages"></span></p>
-                </div>
+        <main>
+            <!-- ini Home content -->
+            <section id="home-content">
                 
-            </article>
-         </section>
+                <!-- ini banner -->
+                <article>
+                    <div class="banner-container">
+                        <div class="banner">
+                            <div class="banner-text">
+                                <h2>Hi <span id="namauser">Orang</span>, Welcome to My website!</h2>
+                                <h1>Ini adalah website pertama yang dibuat oleh Rafly, digunakan sebagai portofolio</h1>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+                <!-- End of Banner -->
+                <!-- End of Home Content -->
 
-     </main>
-     <script src="js/script.js"></script>
-</body>
+            <!-- ini Portofolio content -->
+            <section id="portofolio">
+                <article>
+                    <div class="folio-container">
+                        <div class="text-folio">
+                            <h2>My Portofolio</h2>
+                            <h1>Ini adalah karya saya yang saya buat untuk promosi menu dari bisnis angkringan keluarga saya</h1>
+                        </div>
+                        <div class="posisi-gambar">
+                            <div class="set-gambar">
+                                <div class="gambar-folio">
+                                    <img src="asset/esteh.svg">
+                                    <img src="asset/seblak.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- End of Portofolio -->
+
+                <!-- ini My contact content -->
+            <section id="my-contact">
+                <div class="font-profil">
+                    <h2>My Contact</h2>
+                    <h1>You can find me below!</h1>
+                </div>
+
+                <article class="profile-content">
+                    <div class="profile-item">
+                        <div class="profile-icon profile-1"></div>
+                        <p class="text-profil">Profile 1</p>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="profile-icon profile-2"></div>
+                        <p class="text-profil">Profile 2</p>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="profile-icon profile-3"></div>
+                        <p class="text-profil">Profile 3</p>
+                     </div>
+
+                    <div class="divider"></div>
+                </article>
+            </section>
+
+            <!-- End of Home Content -->
+
+            <!-- ini Message Us content -->
+            <section id="message-us">
+                <div class="pesan-form">
+                    <h2>Message Me</h2>
+                </div>
+
+                <article class="form-awal">
+                    <form class="bentuk" name="message-form" onsubmit="return validateForm()">
+                        <table>
+
+                            <tr>
+                                <td>Nama</td>
+                                <td>: </td>
+                                <td><input placeholder="Nama" type="text" name="full-name" size="48"/></td>
+                            </tr>
+
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td>:</td>
+                                <td><input type="date" name="birth-date" /></td>
+                            </tr>
+
+                            <tr>   
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="radio" id="male" name="gender" value="male" />
+                                    <label for="male">Laki-laki</label>
+                                    <input type="radio" id="female" name="gender" value="male" />
+                                    <label type="female">Perempuan</label>
+                                </td>
+                            </tr> 
+
+                            <tr>
+                                <td class="ab">Pesan</td>
+                                <td class="ab">:</td>
+                                <td><textarea placeholder="Pesan" name="messages" cols="45" rows="10"></textarea></td>
+                            </tr>
+
+                            <tr>
+                                <td><input class="tombol" type="submit" value="Submit" ></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <!-- End of Message Us -->
+
+                    <!-- ini validasi -->
+                    <div class="hasil-form">
+                        <p><b>Nama: </b><span id="sender-full-name"></span></p>
+                        <p><b>Tanggal Lahir: </b><span id="sender-birth-date"></span></p>
+                        <p><b>Jenis Kelamin: </b><span id="sender-gender"></span></p>
+                        <p><b>Pesan: </b><span id="sender-messages"></span></p>
+                    </div>
+                    <!-- End of Validasi -->
+
+                </article>
+            </section>
+
+        </main>
+        <script src="js/script.js"></script>
+    </body>
 
 </html>
